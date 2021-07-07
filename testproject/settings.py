@@ -39,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'cloudinary_storage',
+    'cloudinary',
+
+    #myapp
     'myapp'
 ]
 
@@ -126,7 +131,14 @@ STATIC_ROOT =BASE_DIR/'static_root'
 MEDIA_URL ='/media/'
 MEDIA_ROOT =BASE_DIR/'media/'
 
+# storages
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'jsadika-com',
+    'API_KEY': '271172596516518',
+    'API_SECRET': 'Wfa8GHHf4rdu0qmdl9PLOQAvbhw'
+}
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
