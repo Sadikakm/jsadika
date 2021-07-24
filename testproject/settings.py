@@ -45,7 +45,8 @@ INSTALLED_APPS = [
 
     #myapp
     'myapp',
-    'album'
+    'album',
+    'blog'
 ]
 
 MIDDLEWARE = [
